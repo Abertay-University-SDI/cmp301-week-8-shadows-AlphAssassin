@@ -30,10 +30,19 @@ private:
 
 	Light* light;
 	AModel* model;
+	SphereMesh* sphereMesh;
+	CubeMesh* cubeMesh;
 	ShadowShader* shadowShader;
 	DepthShader* depthShader;
 
-	ShadowMap* shadowMap;
+	ShadowMap* shadowMap[2];
+
+	float lightX = 0;
+	float lightY = 0;
+	float lightZ = -10;
+	float lightDirectionX = 1;
+	float lightDirectionY = 0;
+	float lightDirectionZ = 0;
 };
 
 #endif
